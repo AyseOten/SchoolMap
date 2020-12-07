@@ -1,0 +1,86 @@
+/* Popup (arka plan) */
+.modal {
+    position: fixed; /* Yerinde kal */
+    z-index: 1; /* Üstte */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ful Genişlik */
+    height: 100%; /* Ful Yükseklik */
+    overflow: auto; /* Gerekirse kaydırmayı etkinleştir */
+    background-color: rgb(0,0,0); /* Yedek renk */
+    background-color: rgba(0,0,0,0.4); /* Siyah w / opaklık */
+}
+
+/* İçerik / Kutu */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* % 15 üstten ve ortalanmış */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Ekran boyutuna bağlı olarak daha fazla veya daha az olabilir */
+}
+
+/* Kapat Düğmesi */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* .header{
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    
+}
+
+.infoAndCoord{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+
+} */
+
+.header {
+        padding:50px 0px 10px 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 350px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        height: 30px;
+        font-weight: bold;
+        font-size: large;
+}
+
+
+.infoAndCoord{
+    padding:10px 5px 10px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 20px);
+}
+

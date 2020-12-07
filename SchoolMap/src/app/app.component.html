@@ -1,0 +1,8 @@
+<app-map (newItemEvent)="addItem($event)"></app-map>
+
+<div *ngIf="trueOrFalse" class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <app-modal (newItemE)="addInfos($event)"></app-modal>
+  </div>
+</div>

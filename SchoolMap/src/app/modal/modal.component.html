@@ -1,0 +1,26 @@
+<div class="container">
+    <form [formGroup]="locationForm" (ngSubmit)="onSubmit($event)">
+        <div class="inputs">
+            <h3> For this location :</h3>
+            <label>
+                Location name:
+                <input type="text" formControlName="locationName" name="locationname"required>
+            </label>
+        </div>
+        <div  class="inputs">
+            <label>
+                Adress:
+                <input type="textarea" formControlName="adress" name="adress" >
+            </label>
+        </div>
+        <div  class="inputs">
+            <label>
+                Telephone:
+                <input type="tel" formControlName="telephone" name="telephone" >
+            </label>
+        </div>
+        <div  class="inputs">
+            <button type="submit" [disabled]="!locationForm.valid" >Submit</button>
+        </div>
+    </form>
+</div>
